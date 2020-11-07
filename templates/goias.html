@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goiás</title>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+
+<body>
+    <pre>
+        <center>
+            <h1><img src="{{ url_for('static',filename='escudos/goias.png') }}" alt="Escudo Goiás">Goiás</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Pontos</th>
+                        <th>Jogos</th>
+                        <th>Vitórias</th>
+                        <th>Empates</th>
+                        <th>Derrotas</th>
+                        <th>Gols marcados</th>
+                        <th>Gols sofridos</th>
+                        <th>Saldo de Gols</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20º</td>
+                        <td>12</td>
+                        <td>17</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>20</td>
+                        <td>31</td>
+                        <td>-11</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="index">&#8678; Classificação</a>        
+        </center>
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    text-shadow: 5px 5px 5px lightgray;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+table {
+    width: 40%;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 15px 15px 30px  gray;
+}
+
+thead,
+th {
+    border: 5px solid whitesmoke;
+    background-color: white;
+}
+
+tbody,
+td {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.celVazia {
+    background-color: whitesmoke;
+}
+
+.grupo1 {
+    border-left: 5px solid blue;
+}
+
+.grupo2 {
+    border-left: 5px solid orange;
+}
+
+.grupo3 {
+    border-left: 5px solid green;
+}
+
+.grupo4 {
+    border-left: 5px solid red;
+}
+
+.legendas {
+    text-align: left;
+}
+
+footer {
+    color: gray;
+}
