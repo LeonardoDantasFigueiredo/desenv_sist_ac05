@@ -1,10 +1,22 @@
 * {
+    box-sizing: border-box;
     margin: 0px;
     text-shadow: 5px 5px 5px lightgray;
 }
 
-body {
+body,
+.celVazia {
     background-color: whitesmoke;
+}
+
+#inputText {
+    background-image: url('/static/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    margin-right: 85px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 15px  gray;
 }
 
 table {
@@ -26,8 +38,23 @@ td {
     border-bottom: 5px solid white;
 }
 
-.celVazia {
-    background-color: whitesmoke;
+#tabela tr.header, #tabela tr:hover {
+    background-color: white;
+}
+
+.clube,
+.celVazia button {
+    cursor: pointer;
+}
+
+.celVazia button {
+    border: none;
+    border-radius: 100%;
+}
+
+.celVazia button img {
+    width: 20px;
+    height: 20px;
 }
 
 .grupo1 {

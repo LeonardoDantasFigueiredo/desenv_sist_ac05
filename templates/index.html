@@ -14,152 +14,153 @@
     <pre>
         <center>
             <h1>Brasileirão Série A</h1>
-            <table>
+            <input type="text" id="inputText" onkeyup="pesquisar()" placeholder="Pesquisar nome do clube.." title="Digite o nome do clube">
+            <table id="tabela">
                 <thead>
-                    <tr>
+                    <tr class="header">
+                        <th class="celVazia"><button onclick="ordenaPosicao()" title="Reordenar"><img src="{{ url_for('static',filename='refresh.svg') }}" alt="Refresh"></button></th>
                         <th class="celVazia"></th>
-                        <th class="celVazia"></th>
-                        <th>Clube</th>
+                        <th class="clube" onclick="ordenaNome()" title="Ordenar A-Z">Clube</th>
                         <th>Pontos</th>
                         <th>Últimas cinco partidas</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="grupo1">
-                        <td>1º</td>
+                        <td>1</td>
                         <td><img src="{{ url_for('static',filename='escudos/internacional.png') }}" alt="Escudo Internacional"></td>
                         <td><a href="internacional" title="Clique para mais detalhes">Internacional</a></td>
                         <td>35</td>
                         <td>&#10060;&#9898;&#9989;&#9989;&#9989;</td>
                     </tr>
                     <tr class="grupo1">
-                        <td>2º</td>
+                        <td>2</td>
                         <td><img src="{{ url_for('static',filename='escudos/flamengo.png') }}" alt="Escudo Flamengo"></td>
                         <td><a href="flamengo" title="Clique para mais detalhes">Flamengo</a></td>
                         <td>35</td>
                         <td>&#10060;&#9898;&#9989;&#9898;&#9989;</td>
                     </tr>
                     <tr class="grupo1">
-                        <td>3º</td>
+                        <td>3</td>
                         <td><img src="{{ url_for('static',filename='escudos/atletico_mg.png') }}" alt="Escudo Atlético-MG"></td>
                         <td><a href="atletico_mg" title="Clique para mais detalhes">Atlético-MG</a></td>
                         <td>32</td>
                         <td>&#10060;&#9898;&#10060;&#9898;&#9989;</td>
                     </tr>
                     <tr class="grupo1">
-                        <td>4º</td>
+                        <td>4</td>
                         <td><img src="{{ url_for('static',filename='escudos/fluminense.png') }}" alt="Escudo Fluminense"></td>
                         <td><a href="fluminense" title="Clique para mais detalhes">Fluminense</a></td>
                         <td>32</td>
                         <td>&#9989;&#9989;&#9898;&#9898;&#9989;</td>
                     </tr>
                     <tr class="grupo2">
-                        <td>5º</td>
+                        <td>5</td>
                         <td><img src="{{ url_for('static',filename='escudos/sao_paulo.png') }}" alt="Escudo São Paulo"></td>
                         <td><a href="sao_paulo" title="Clique para mais detalhes">São Paulo</a></td>
                         <td>30</td>
                         <td>&#9989;&#9898;&#9989;&#9989;&#9898;</td>
                     </tr>
                     <tr class="grupo2">
-                        <td>6º</td>
+                        <td>6</td>
                         <td><img src="{{ url_for('static',filename='escudos/santos.png') }}" alt="Escudo Santos"></td>
                         <td><a href="santos" title="Clique para mais detalhes">Santos</a></td>
                         <td>30</td>
                         <td>&#9989;&#10060;&#9989;&#10060;&#9989;</td>
                     </tr>
                     <tr class="grupo3">
-                        <td>7º</td>
+                        <td>7</td>
                         <td><img src="{{ url_for('static',filename='escudos/palmeiras.png') }}" alt="Escudo Palmeiras"></td>
                         <td><a href="palmeiras" title="Clique para mais detalhes">Palmeiras</a></td>
                         <td>28</td>
                         <td>&#9989;&#9989;&#10060;&#10060;&#10060;</td>
                     </tr>
                     <tr class="grupo3">
-                        <td>8º</td>
+                        <td>8</td>
                         <td><img src="{{ url_for('static',filename='escudos/gremio.png') }}" alt="Escudo Grêmio"></td>
                         <td><a href="gremio" title="Clique para mais detalhes">Grêmio</a></td>
                         <td>27</td>
                         <td>&#9989;&#9989;&#9898;&#9989;&#10060;</td>
                     </tr>
                     <tr class="grupo3">
-                        <td>9º</td>
+                        <td>9</td>
                         <td><img src="{{ url_for('static',filename='escudos/sport_recife.png') }}" alt="Escudo Sport Recife"></td>
                         <td><a href="sport_recife" title="Clique para mais detalhes">Sport Recife</a></td>
                         <td>24</td>
                         <td>&#9989;&#9898;&#10060;&#10060;&#10060;</td>
                     </tr>
                     <tr class="grupo3">
-                        <td>10º</td>
+                        <td>10</td>
                         <td><img src="{{ url_for('static',filename='escudos/fortaleza.png') }}" alt="Escudo Fortaleza"></td>
                         <td><a href="fortaleza" title="Clique para mais detalhes">Fortaleza</a></td>
                         <td>24</td>
                         <td>&#10060;&#9989;&#9898;&#9989;&#9898;</td>
                     </tr>
                     <tr class="grupo3">
-                        <td>11º</td>
+                        <td>11</td>
                         <td><img src="{{ url_for('static',filename='escudos/corinthians.png') }}" alt="Escudo Corinthians"></td>
                         <td><a href="corinthians" title="Clique para mais detalhes">Corinthians</a></td>
                         <td>24</td>
                         <td>&#9989;&#9989;&#10060;&#9989;&#10060;</td>
                     </tr>
                     <tr class="grupo3">
-                        <td>12º</td>
+                        <td>12</td>
                         <td><img src="{{ url_for('static',filename='escudos/ceara_sc.png') }}" alt="Escudo Ceará SC"></td>
                         <td><a href="ceara_sc" title="Clique para mais detalhes">Ceará SC</a></td>
                         <td>23</td>
                         <td>&#9898;&#9989;&#9898;&#9989;&#9898;</td>
                     </tr>
                     <tr>
-                        <td>13º</td>
+                        <td>13</td>
                         <td><img src="{{ url_for('static',filename='escudos/atletico_go.png') }}" alt="Escudo Atlético-GO"></td>
                         <td><a href="atletico_go" title="Clique para mais detalhes">Atlético-GO</a></td>
                         <td>22</td>
                         <td>&#10060;&#10060;&#9898;&#9989;&#9989;</td>
                     </tr>
                     <tr>
-                        <td>14º</td>
+                        <td>14</td>
                         <td><img src="{{ url_for('static',filename='escudos/botafogo.png') }}" alt="Escudo Botafogo"></td>
                         <td><a href="botafogo" title="Clique para mais detalhes">Botafogo</a></td>
                         <td>20</td>
                         <td>&#9898;&#9898;&#10060;&#9989;&#9989;</td>
                     </tr>
                     <tr>
-                        <td>15º</td>
+                        <td>15</td>
                         <td><img src="{{ url_for('static',filename='escudos/bahia.png') }}" alt="Escudo Bahia"></td>
                         <td><a href="bahia" title="Clique para mais detalhes">Bahia</a></td>
                         <td>19</td>
                         <td>&#10060;&#9989;&#9898;&#10060;&#9989;</td>
                     </tr>
                     <tr>
-                        <td>16º</td>
+                        <td>16</td>
                         <td><img src="{{ url_for('static',filename='escudos/vasco_da_gama.png') }}" alt="Escudo Vasco da Gama"></td>
                         <td><a href="vasco_da_gama" title="Clique para mais detalhes">Vasco da Gama</a></td>
                         <td>19</td>
                         <td>&#9898;&#10060;&#10060;&#10060;&#10060;</td>
                     </tr>
                     <tr class="grupo4">
-                        <td>17º</td>
+                        <td>17</td>
                         <td><img src="{{ url_for('static',filename='escudos/coritiba.png') }}" alt="Escudo Coritiba"></td>
                         <td><a href="coritiba" title="Clique para mais detalhes">Coritiba</a></td>
                         <td>19</td>
                         <td>&#9989;&#10060;&#10060;&#9989;&#9898;</td>
                     </tr>
                     <tr class="grupo4">
-                        <td>18º</td>
+                        <td>18</td>
                         <td><img src="{{ url_for('static',filename='escudos/bragantino_sp.png') }}" alt="Escudo Bragantino-SP"></td>
                         <td><a href="bragantino_sp" title="Clique para mais detalhes">Bragantino-SP</a></td>
                         <td>19</td>
                         <td>&#10060;&#9989;&#9989;&#9898;&#10060;</td>
                     </tr>
                     <tr class="grupo4">
-                        <td>19º</td>
+                        <td>19</td>
                         <td><img src="{{ url_for('static',filename='escudos/athletico_pr.png') }}" alt="Escudo Athletico-PR"></td>
                         <td><a href="athletico_pr" title="Clique para mais detalhes">Athletico-PR</a></td>
                         <td>16</td>
                         <td>&#10060;&#10060;&#9898;&#10060;&#10060;</td>
                     </tr>
                     <tr class="grupo4">
-                        <td>20º</td>
+                        <td>20</td>
                         <td><img src="{{ url_for('static',filename='escudos/goias.png') }}" alt="Escudo Goiás"></td>
                         <td><a href="goias" title="Clique para mais detalhes">Goiás</a></td>
                         <td>12</td>
@@ -199,6 +200,7 @@
             </footer>
         </center>
     </pre>
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
 </body>
 
 </html>
