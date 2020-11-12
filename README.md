@@ -1,4 +1,4 @@
-### Atividade contínua 05
+### Prova Oficial
 #### Desenvolvimento de Sistemas <br>
 ##### Criação de páginas web (Campeonato Esportivo) utilizando Python/Flask <br><br>
 Elthon Dias da Silva - 1903075 <br>
